@@ -1,0 +1,1 @@
+All code is written in x86 assembly language for DOS, using the MASM (Microsoft Macro Assembler) syntax. 
