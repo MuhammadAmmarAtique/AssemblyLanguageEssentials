@@ -1,20 +1,19 @@
-;Simple Program to Print a Character in Assembly Language
-.model small
+; Displaying a String in Assembly Language
+
+.MODEL SMALL  ;"SMALL" model means that the code and data will fit within a single 64KB segment each
 .stack 100h
-
-.data
-A db 'A'
-
+.DATA
+tr db 'My name is Ammar $'   ;db = 1byte dw = 2byte and dd = 4byte (define byte, define word, double word)
 .code
-Main proc
-    mov ax, @data
-    mov ds, ax
+main PROC
+    mov ax,@data
+    mov ds,ax
 
-    mov dl, A
-    mov ah, 2 ;Print a single character
+    mov dx ,offset tr
+    mov ah, 9 ;Print a null-terminated string
     int 21h
 
-    mov ah, 4Ch ;terminate the program and return control to the operating system
+    mov ah, 4Ch  ;terminate the program and return control to the operating system
     int 21h
-Main endp
-end Main
+endp
+end main
