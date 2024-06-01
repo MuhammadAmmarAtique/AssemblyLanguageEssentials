@@ -1,24 +1,24 @@
-;Assembly Program to add two numbers
-
+;Assembly Program to add two numbers & display result
 .MODEL SMALL
-.STACK 100h
+.stack 100H
 .DATA
-num1 db 5     
-num2 db 5  
-  
-
 .CODE
-main PROC
-    ; Initialize the data segment
-    mov ax, @data
-    mov ds, ax
+main proc
 
-    mov al, num1    
-    mov bl, num2  
-    add al, bl      
+mov al,1
+mov cl,2
 
-    mov ah, 4Ch     
-    int 21h        
+add al,cl
+; it converts the numeric result of AL into its ASCII equivalent so that it can be displayed as a character.
+; 51 decimal & '3' character
+add al,48 
+mov dl,al
 
-main ENDP
-END main
+mov ah,2
+int 21H
+
+mov ah,4CH
+int 21H
+
+main endp
+end main
