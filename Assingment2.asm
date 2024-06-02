@@ -9,11 +9,11 @@
     num2    DW 5
     num3    DW 7
     answer  DW ?
-    buffer  DB 6 DUP ('$')
+    buffer  DB 6 DUP ('$') ; buffer is a space in memory use to hold the converted result as a string(asc2 code)
 
 .CODE
 MAIN PROC
-    ; Initialize variables
+    ; Initialize the data segment register
     MOV AX, @DATA
     MOV DS, AX
     
