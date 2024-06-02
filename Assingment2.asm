@@ -1,3 +1,6 @@
+;Declare three integer variables. Initialize them to 4, 5 and 7.  
+;Add these numbers and place the result in a fourth variable called answer. 
+
 .MODEL SMALL
 .STACK 100H
 
