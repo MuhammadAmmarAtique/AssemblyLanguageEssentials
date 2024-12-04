@@ -1,6 +1,6 @@
 # Assembly Language Programs  
 
-This repository contains assembly language programs created as part of a university course. The programs are written in **x86 Assembly Language** for **DOS**, using the **MASM (Microsoft Macro Assembler)** syntax.  
+This repository contains assembly language programs created as part of a university course (Computer Organization & Assembly Language) BSCS6th A. The programs are written in **x86 Assembly Language** for **DOS**, using the **MASM (Microsoft Macro Assembler)** syntax.  
 
 ## Contents  
 
